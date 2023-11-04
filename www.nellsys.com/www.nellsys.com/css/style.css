@@ -799,16 +799,16 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 5rem;
+    padding: 5rem;
 }
 
-.appImageStyle{
+/* .appImageStyle{
     height: 600px;
     width: 800px;
-}
+} */
 
 .appDetailsQRsContainer{
-    padding-left: 5rem;
+    padding: 5rem;
 
     display: flex;
     flex-direction: column;
@@ -818,7 +818,7 @@ img {
 
 .qrScanContainer{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
 }
@@ -830,4 +830,8 @@ img {
     align-items: center;
 }
 
-
+@media (max-width:1300px){
+    .mainHeadContainer{
+        flex-direction: column;
+    }
+}
