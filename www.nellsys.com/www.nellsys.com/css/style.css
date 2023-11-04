@@ -345,10 +345,10 @@ h6,
     justify-content: center
 }
 
-img {
+/* img {
     max-width: 100%;
     max-height: 100%;
-}
+} */
 
 .text {
     font-size: 20px;
@@ -357,7 +357,7 @@ img {
 
 /*** Spinner ***/
 
-#spinner {
+/* #spinner {
     opacity: 0;
     visibility: hidden;
     transition: opacity .5s ease-out, visibility 0s linear .5s;
@@ -368,7 +368,7 @@ img {
     transition: opacity .5s ease-out, visibility 0s linear 0s;
     visibility: visible;
     opacity: 1;
-}
+} */
 
 /*** Button ***/
 
@@ -408,7 +408,7 @@ img {
 
 /*** Navbar ***/
 
-.navbar.sticky-top {
+/* .navbar.sticky-top {
     top: -100px;
     transition: .5s;
 }
@@ -470,7 +470,7 @@ img {
 .navbar .btn:hover {
     color: #FFFFFF !important;
     background: var(--primary) !important;
-}
+} */
 
 .display-22 {
     font-size: 2.8rem;
@@ -800,6 +800,8 @@ img {
     justify-content: center;
     align-items: center;
     padding: 5rem;
+    padding-bottom: 0px;
+    padding-top: 0px;
 }
 
 /* .appImageStyle{
@@ -809,7 +811,8 @@ img {
 
 .appDetailsQRsContainer{
     padding: 5rem;
-    padding-top: none;
+    padding-bottom: 0px;
+    padding-top: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -830,6 +833,15 @@ img {
     align-items: center;
 }
 
+
+@media (max-width:768px){
+    .qrCodeImage{
+        display: none;
+    }
+    .qrScanContainer{
+        flex-direction: column;
+    }
+}
 
 
 @media (max-width:1300px){
